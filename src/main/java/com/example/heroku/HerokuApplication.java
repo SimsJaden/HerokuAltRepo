@@ -85,7 +85,7 @@ public class HerokuApplication {
       while (rs.next()) {
         Timestamp timestamp = rs.getTimestamp("tick");
         String randomString = rs.getString("random_string");
-        output.add("Read from DB: " + timestamp + " " + randomString);
+        output.add("Read from DB: " + timestamp + "&nbsp;" + randomString);
       }
 
       model.put("records", output);
